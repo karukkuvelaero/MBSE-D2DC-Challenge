@@ -1,0 +1,39 @@
+!SESSION 2025-08-05 21:12:52.863 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.530
+!MESSAGE Rich text widget can not install beforePaste/afterPaste/beforeCommandExec listeners!
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.538
+!MESSAGE Rich text widget cannot install the open link command
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.540
+!MESSAGE Rich text widget cannot install the save handler
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.541
+!MESSAGE Rich text widget cannot install the notification handler
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.542
+!MESSAGE Rich text widget cannot install onChangeEvent handler
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.543
+!MESSAGE Rich text widget cannot install resetDirtyState handler
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.543
+!MESSAGE Rich text widget cannot install dataReady handler
+
+!ENTRY org.polarsys.kitalpha.richtext.widget 2 0 2025-08-05 21:16:24.544
+!MESSAGE Rich text widget cannot install setData handler
+!SESSION 2025-08-05 21:29:45.239 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.14
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -data /home/dkr/Documents/MBSE D2DC -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-08-05 21:29:47.219
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
