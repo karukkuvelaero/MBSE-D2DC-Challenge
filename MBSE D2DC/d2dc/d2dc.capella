@@ -44,13 +44,50 @@
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
           id="c275fe4e-85b5-4636-92a3-13bff640e83b" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-            id="3e57eac0-7fd8-47d4-8757-dca1cb4f714d" name="Root Operational Activity"/>
+            id="3e57eac0-7fd8-47d4-8757-dca1cb4f714d" name="Root Operational Activity">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="d12540d1-f7ae-402d-bb13-618c480f2b5a" name="OperationalActivity 1"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="dfd648b4-6d56-4512-a29e-3228492ef2aa" name="Manuevering notification"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="9a8dd811-7588-41db-849c-bb7a08a6cd48" name="Processing the message"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="3c39ba99-aa71-4396-af7e-d02f7dd2a29b" name="Accept the Maneuver"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="f6bf9cc6-962d-46a1-ac48-76843331e72e" name="Reject the maneuver"/>
+        </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="6c3aecb8-109b-4df7-a544-cce06320f912" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="40c58a0e-5aa7-4cea-a8d3-d19038760b99" name="Communicate with other drivers"
             description="&lt;p>To communicate about the road and weather conditions, on-Road Situations like Traffic Blockdowns, Closures due to Disaster and clearing pathways for emergency vehicles during emergencies&lt;/p>&#xA;">
+          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
+              id="e8a6acb2-7494-4800-a4b6-b477745e63af" name="[OAS] Communicate with other drivers in City"
+              kind="INTERACTION">
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="739d0ab9-c0e8-4453-8ae1-9eadec9b186a" name="Manuevering notification"
+                representedInstance="#dfd648b4-6d56-4512-a29e-3228492ef2aa"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="59f58662-7faf-4eca-b066-e77ad6ab97e1" name="Processing the message"
+                representedInstance="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="ca5bbde1-77b4-4314-acd1-cf23f6d72790" name="Accept the Maneuver"
+                representedInstance="#3c39ba99-aa71-4396-af7e-d02f7dd2a29b"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="9337b058-ca5c-4da9-99b6-0f55ec19d5ae" name="Reject the maneuver"
+                representedInstance="#f6bf9cc6-962d-46a1-ac48-76843331e72e"/>
+          </ownedScenarios>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="89c73429-bb14-41e6-8765-62a75f825b72" involved="#d12540d1-f7ae-402d-bb13-618c480f2b5a"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="f4fb8193-461c-4701-8ab1-cd19e84ade15" involved="#dfd648b4-6d56-4512-a29e-3228492ef2aa"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="41496da3-9934-4137-8f94-fedc3ee5f34b" involved="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="c10ce969-bb51-4a15-a4b9-0964aef1ed8d" involved="#3c39ba99-aa71-4396-af7e-d02f7dd2a29b"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="6b1ea33a-cbe0-4b95-ad37-0b45e050ca38" involved="#f6bf9cc6-962d-46a1-ac48-76843331e72e"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="b0879cb6-4059-4fed-945e-6a8f6aa33249" involved="#1fc96423-be85-4c92-bd7b-d6c4b2b77601"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
