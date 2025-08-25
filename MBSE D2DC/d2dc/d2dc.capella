@@ -46,15 +46,54 @@
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
             id="3e57eac0-7fd8-47d4-8757-dca1cb4f714d" name="Root Operational Activity">
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="d12540d1-f7ae-402d-bb13-618c480f2b5a" name="OperationalActivity 1"/>
+              id="d12540d1-f7ae-402d-bb13-618c480f2b5a" name="Get Road Conditions"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="dfd648b4-6d56-4512-a29e-3228492ef2aa" name="Manuevering notification"/>
+              id="dfd648b4-6d56-4512-a29e-3228492ef2aa" name="Send Maneuver Notification"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="9a8dd811-7588-41db-849c-bb7a08a6cd48" name="Processing the message"/>
+              id="9a8dd811-7588-41db-849c-bb7a08a6cd48" name="Process the message"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="3c39ba99-aa71-4396-af7e-d02f7dd2a29b" name="Accept the Maneuver"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="f6bf9cc6-962d-46a1-ac48-76843331e72e" name="Reject the maneuver"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="764a76f1-86eb-4d5e-b307-cf967359fed2" name="Broadcast Emergency Announcement"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c5aacc24-eadc-4433-8218-566ba9b500bd" name="Deploy Emergency Protocols"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="aa30510e-1485-400d-87a2-5bbfbd948b05" name="Do Malicious Activities"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="82169a8a-94f3-48ee-bf6c-34b932e31263" name="Identify Malicious Activities"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="24f3cb1e-26fc-4c6d-a345-675397ff7929" name="Make Legislation For D2DC"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="f5d57193-a98b-4cdd-94a5-5bc7f97a2ee8" name="Neutralise Malicious Activities"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="b0528a4a-68c9-435c-a94d-ce0e2d6521f7" name="Provide Interface for D2DC in vehicles"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="b0179813-7c54-4893-8dad-24d099fa2bd3" name="Formalise Training for D2DC"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="eeacd697-cd3e-4e70-90a6-28e89d52b260" name="Provide Training for D2DC"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="1c14554f-398e-4641-af5c-8d3d44cddf0c" name="Road Conditions Query"
+              target="#9a8dd811-7588-41db-849c-bb7a08a6cd48" source="#d12540d1-f7ae-402d-bb13-618c480f2b5a"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="bc1e373e-573a-47d2-ade2-f9ee194f1c29" name="Maneuver Notification"
+              target="#9a8dd811-7588-41db-849c-bb7a08a6cd48" source="#dfd648b4-6d56-4512-a29e-3228492ef2aa"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="17d34caa-2b09-423e-bd96-25bd26026087" name="Acceptance Message"
+              target="#3c39ba99-aa71-4396-af7e-d02f7dd2a29b" source="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="2f5cc7ab-a9da-4c93-a9a6-decd849be87d" name="Rejection Message" target="#f6bf9cc6-962d-46a1-ac48-76843331e72e"
+              source="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="9d7fc9fd-bf29-498b-8108-ed7f24775baf" name="Road Conditions" target="#d12540d1-f7ae-402d-bb13-618c480f2b5a"
+              source="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="495ca1ba-f04a-4502-be90-427cd726fdd8" name="Emergency Broadcast"
+              target="#9a8dd811-7588-41db-849c-bb7a08a6cd48" source="#764a76f1-86eb-4d5e-b307-cf967359fed2"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="41c7c3f6-62e4-4a83-8647-092605e3583e" name="Emergency Protocols"
+              target="#c5aacc24-eadc-4433-8218-566ba9b500bd" source="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
@@ -66,10 +105,10 @@
               id="e8a6acb2-7494-4800-a4b6-b477745e63af" name="[OAS] Communicate with other drivers in City"
               kind="INTERACTION">
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="739d0ab9-c0e8-4453-8ae1-9eadec9b186a" name="Manuevering notification"
+                id="739d0ab9-c0e8-4453-8ae1-9eadec9b186a" name="Send Maneuver Notification"
                 representedInstance="#dfd648b4-6d56-4512-a29e-3228492ef2aa"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="59f58662-7faf-4eca-b066-e77ad6ab97e1" name="Processing the message"
+                id="59f58662-7faf-4eca-b066-e77ad6ab97e1" name="Process the message"
                 representedInstance="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="ca5bbde1-77b4-4314-acd1-cf23f6d72790" name="Accept the Maneuver"
@@ -120,6 +159,12 @@
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="cb92734a-5fb7-4443-8e0d-7ad9c0666e81" name="Negotiate On-Road Situations in Real-time"
             description="&lt;p>Negotiate following On-Road Situations Like:&lt;/p>&#xA;&#xA;&lt;ol>&#xA;&#x9;&lt;li>I will overtake&lt;/li>&#xA;&#x9;&lt;li>You can pass&lt;/li>&#xA;&#x9;&lt;li>Make way&lt;/li>&#xA;&#x9;&lt;li>I will enter the turn first&lt;/li>&#xA;&#x9;&lt;li>OK&lt;/li>&#xA;&#x9;&lt;li>No&lt;/li>&#xA;&#x9;&lt;li>Changing Lanes&lt;/li>&#xA;&#x9;&lt;li>Enter Chat mode&lt;/li>&#xA;&lt;/ol>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;">
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="486d120a-bf56-4c38-bbbc-5c7f21aa412d" involved="#c5aacc24-eadc-4433-8218-566ba9b500bd"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="97e659f0-ccb4-4d14-9bf9-ef29fba4cfc2" involved="#764a76f1-86eb-4d5e-b307-cf967359fed2"/>
+          <ownedAbstractFunctionAbstractCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.interaction:AbstractFunctionAbstractCapabilityInvolvement"
+              id="9323218c-0495-443c-aed3-848b0ad6eb8c" involved="#9a8dd811-7588-41db-849c-bb7a08a6cd48"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="528c87e0-6b43-4779-9c5c-2b633e93a8f6" involved="#1fc96423-be85-4c92-bd7b-d6c4b2b77601"/>
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
