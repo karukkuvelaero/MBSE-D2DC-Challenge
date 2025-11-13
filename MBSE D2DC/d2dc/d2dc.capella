@@ -2135,7 +2135,7 @@
             id="8aaf51b9-fdcc-4691-bee7-17c9172ba74b" targetElement="#24ce681c-635c-4327-b6d2-a6950d6a356b"
             sourceElement="#2997f63e-0a10-468c-b766-617ee0abad5c"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="991f383f-ec55-4517-a024-850321ab068f"
-            name="Logical System" abstractType="#fe34976f-2123-47e0-bca6-befdefdb35b0"/>
+            name="Driver to Driver Communication system" abstractType="#fe34976f-2123-47e0-bca6-befdefdb35b0"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="38dcfdb7-f729-4c3e-9c8b-b389ae1e2212"
             name="Emergency Vehicles Driver" abstractType="#76cbbb82-3e60-4f5f-b715-205db5028e46"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a4df2620-e736-4e7e-b742-03e9331b5681"
@@ -2197,7 +2197,7 @@
               sourceElement="#e75dc9dc-d0dc-4bf9-9052-25fc6e740177"/>
         </ownedComponentExchanges>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="fe34976f-2123-47e0-bca6-befdefdb35b0" name="Logical System">
+            id="fe34976f-2123-47e0-bca6-befdefdb35b0" name="Driver to Driver Communication system">
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="68a494b6-2cf2-41b9-929d-4762abec9dfd" targetElement="#8cb68c56-2cf5-4c9a-8cd3-bc99521437d3"
               sourceElement="#cbda4e93-2f6e-429c-a12e-5813871b8247"/>
@@ -2310,9 +2310,30 @@
                 id="486a6397-4620-411c-a441-fe293ac53181" targetElement="#3baad76e-f527-46d7-9e73-96fc58e264b5"
                 sourceElement="#a453bf13-5046-4bbb-be37-4e9fc9bc8e56"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fa5d5574-e523-428d-ab54-5b2e385689f5"
+              name="Transceiver" abstractType="#9350540e-1d41-4ef3-9b53-619c329c210a"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4e09bd9b-5d49-4250-b03e-b370a16ac9eb"
+              name="HMI" abstractType="#b4c5af76-f532-4d49-b367-ed8e143dcc08"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="03520480-4bf4-47f4-8673-f6e8f583be9d" targetElement="#12307eec-1c0f-4348-8365-223461983383"
               sourceElement="#fe34976f-2123-47e0-bca6-befdefdb35b0"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="9350540e-1d41-4ef3-9b53-619c329c210a" name="Transceiver"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="b4c5af76-f532-4d49-b367-ed8e143dcc08" name="HMI">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2e44a311-e129-4f05-9738-dfc6d84ab50d"
+                name="Audio Processing" abstractType="#fdbc7fd0-6a88-4e04-becb-079f9a5fc451"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="862ebfd3-8913-4c7d-b8e9-54c4f669d557"
+                name="Tactile Buttons" abstractType="#08a7db40-4c5e-40fa-b5e0-f69000387bc3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4326712a-538d-4d1a-98ab-641c5bb396e5"
+                name="Display" abstractType="#0caa15a4-4406-4040-abde-614e68e79361"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="fdbc7fd0-6a88-4e04-becb-079f9a5fc451" name="Audio Processing"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="08a7db40-4c5e-40fa-b5e0-f69000387bc3" name="Tactile Buttons"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="0caa15a4-4406-4040-abde-614e68e79361" name="Display"/>
+          </ownedLogicalComponents>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="76cbbb82-3e60-4f5f-b715-205db5028e46" name="Emergency Vehicles Driver"
