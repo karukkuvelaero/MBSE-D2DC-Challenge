@@ -926,6 +926,8 @@
               id="7129e9b9-4851-41bd-95fc-bf75a8517e92" name="Broadcast Emergency Announcement">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="5b01911e-5206-4ba4-9842-b7292516f30c" name="outEmergency Broadcast"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b3dd9152-340c-4c3f-956a-8145430b005e" name="outEmergency Broadcast"/>
             <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                 id="4f064921-d135-453b-aa06-9843f1abeb10" targetElement="#764a76f1-86eb-4d5e-b307-cf967359fed2"
                 sourceElement="#7129e9b9-4851-41bd-95fc-bf75a8517e92"/>
@@ -936,6 +938,14 @@
                 id="d5c4acf5-f3e1-4339-90e0-597e427b4bd3" name="Process the message">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="57432adc-ab7b-455b-974d-f41426b99793" name="FIP 2"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="be447dfa-151a-4c2f-88f7-f61bfb9e6b3a" name="FIP 3"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="79fdf3eb-3e9a-44d2-b3e1-40d0e7e324a4" name="FIP 4"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="ea4f292f-d623-42c6-812b-30e45b73d4fc" name="FIP 5"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="9534359b-729e-4816-a2eb-23f7310854e2" name="FIP 6"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="837103d0-774e-477f-bf3b-9c960fe56940" name="outAcceptance Message"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -944,6 +954,8 @@
                   id="3dbb31e6-1b94-46cd-b38a-1b4afcfb8153" name="outEmergency Protocols"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="8810348a-3c3f-4661-a95e-b8d8292c9ef3" name="outRoad Conditions"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="b6c41572-16cc-44b5-b969-6de1eeaedc9c" name="outRoad Conditions"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="f7aaf3b5-64b4-41a6-afd3-47fd41ad7322" targetElement="#9a8dd811-7588-41db-849c-bb7a08a6cd48"
                   sourceElement="#d5c4acf5-f3e1-4339-90e0-597e427b4bd3"/>
@@ -952,6 +964,8 @@
                 id="f38da3c8-7f38-4dee-8e0e-dfcc0815eadf" name="Send Maneuver Notification">
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="f59e9f11-c7d3-4318-bbbe-81917307bdbe" name="outManeuver Notification"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="10c73a7f-0ff4-4613-9bad-54552751dc4e" name="outManeuver Notification"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="66955bd9-38ae-4adf-93c1-4fb07bc8e14b" targetElement="#dfd648b4-6d56-4512-a29e-3228492ef2aa"
                   sourceElement="#f38da3c8-7f38-4dee-8e0e-dfcc0815eadf"/>
@@ -961,7 +975,7 @@
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="c5dcbad6-aefa-4436-af29-fc1657ce357b" name="inAcceptance Message"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="bf5c5265-6112-40a0-99ea-ce2394bbb052" name="FOP 1"/>
+                  id="f0536948-6a05-4926-8fac-f9fdef665ccf" name="FOP 1"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="e926c67a-0346-46d2-8568-b91b55bad5c4" targetElement="#3c39ba99-aa71-4396-af7e-d02f7dd2a29b"
                   sourceElement="#a3e0576d-a4e2-4b09-aa80-23a83a862c48"/>
@@ -971,7 +985,7 @@
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="47fb3232-f659-4903-a6e6-e4c48b19eb8e" name="inRejection Message"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="da418909-8d2c-4e94-9f09-d789d44a337a" name="FOP 1"/>
+                  id="5190c0c1-d4d0-4e5a-a2cc-f19fa41f309a" name="FOP 1"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="9ccf7e96-50d2-415e-bdb7-741328d781c6" targetElement="#f6bf9cc6-962d-46a1-ac48-76843331e72e"
                   sourceElement="#3d2de10d-7e36-4b26-9b6a-3eda3666ef18"/>
@@ -986,8 +1000,10 @@
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
                 id="f4cfb49f-173e-4750-b3bb-2c40aff15968" name="Get Road Conditions">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="8a68141b-1a4d-48c4-be37-68d5de5747dc" name="FIP 1"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="c8e41655-1133-401a-91b1-69d9fcf2fce4" name="outRoad Conditions Query"/>
+                  id="d2e2a39f-81e4-43fa-8968-56141eca78d3" name="outRoad Conditions Query"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="542683ff-ba45-4fd2-b397-fcedefce013b" targetElement="#d12540d1-f7ae-402d-bb13-618c480f2b5a"
                   sourceElement="#f4cfb49f-173e-4750-b3bb-2c40aff15968"/>
@@ -1020,35 +1036,151 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="64041230-4d49-4b8a-88b9-c05382982557" name="Manage Maneuver Notification">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="aefdf512-46c4-441c-8fab-a03e5e8a50f8" name="Evaluate Maneuver Feasibility"/>
+                id="aefdf512-46c4-441c-8fab-a03e5e8a50f8" name="Evaluate Maneuver Feasibility">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="3b1bbe37-8132-4eff-9d2a-a69df1c577f4" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="02be0c05-5dc8-40b7-8ad7-7bbe5c77c607" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="2e62244a-de6c-4f9f-bd9f-4a915f70efb9" name="Handle Maneuver Requests"/>
+                id="2e62244a-de6c-4f9f-bd9f-4a915f70efb9" name="Handle Maneuver Requests">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="db3d5b51-da3c-40cf-a7cd-3ccc0afaab2a" name="inManeuver Notification"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="8d2d9b58-f156-4613-bf10-3e5c8b7ca066" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="50cf4b71-35f4-49be-8907-903aa0e0260c" name="Support Maneuver Acceptance Decision"/>
+                id="50cf4b71-35f4-49be-8907-903aa0e0260c" name="Support Maneuver Acceptance Decision">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="31518b44-eb8f-4e41-838c-075a65e08189" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="9638c576-a897-41f1-8adf-fa8d21f14db6" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="0f1fa1df-193e-49be-9e18-4e280f7cf499" name="Notify Involved Drivers"/>
+                id="0f1fa1df-193e-49be-9e18-4e280f7cf499" name="Notify Involved Drivers">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="22b85989-3e49-43a2-ac58-9388b2ea79d0" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="a91f285c-b5ae-4349-864e-9d43400a53b0" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="a3efe8ca-b446-4c53-9b79-eb807952e90b" name="Coordinate Negotiations Outcomes"/>
+                id="a3efe8ca-b446-4c53-9b79-eb807952e90b" name="Coordinate Negotiations Outcomes">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="c3e82a8e-8223-47b2-bf95-c0cbbf36bd92" name="FIP 1"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="5c0d12d8-f28c-490c-ad02-e2fb98456b14" name="FIP 2"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="af0b624b-9b8f-4852-b61c-7244cfb271a7" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="d23bd235-2e50-416e-93cd-6c80c4d1c41f" name="Manuever Notification"
+                target="#3b1bbe37-8132-4eff-9d2a-a69df1c577f4" source="#8d2d9b58-f156-4613-bf10-3e5c8b7ca066"/>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="7ba7fdff-8ed2-45cb-9c45-ec8512418568" name="Maneuver with Feasibilty Data"
+                target="#31518b44-eb8f-4e41-838c-075a65e08189" source="#02be0c05-5dc8-40b7-8ad7-7bbe5c77c607"/>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="b1464931-7bc3-4d1f-b804-35abb68f7b17" name="Acknowledgement for Maneuver Request"
+                target="#22b85989-3e49-43a2-ac58-9388b2ea79d0" source="#af0b624b-9b8f-4852-b61c-7244cfb271a7"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="f66d4bf3-4654-4b12-8f60-1f19593dcbb5" name="Broadcast Emergency Maneuver Information">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="75141db5-5d0d-4b24-b1e5-eb08ed9034fe" name="Detect Emergency Maneuver Intent"/>
+                id="75141db5-5d0d-4b24-b1e5-eb08ed9034fe" name="Detect Emergency Maneuver Intent">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="f680f123-3b26-4ba5-b00c-fe6df730bb56" name="inEmergency Broadcast"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="495fe566-d51c-4af3-a3a2-2dbe387d7d32" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="824ca1bb-71f6-4c2e-9302-0a4a224e1342" name="Prioritise Emergency Communication"/>
+                id="824ca1bb-71f6-4c2e-9302-0a4a224e1342" name="Prioritise Emergency Communication">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="cb046aac-61a5-402b-af01-a1af9c3aa0d9" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="cd8ed3b2-4163-44a5-943e-5361cff5b052" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="29771fda-0c51-445e-ad16-d0d6c58c8235" name="Broadcast Emergency Information"/>
+                id="29771fda-0c51-445e-ad16-d0d6c58c8235" name="Broadcast Emergency Information">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="05ccfdd9-abd9-4189-9a42-8a525cd5742d" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="97b1b291-00cd-446a-be1c-7756c1924cbc" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="22f105c4-545d-43f1-ac6e-593b88880831" name="Emergency Maneuver with Detailed Instructions"
+                target="#cb046aac-61a5-402b-af01-a1af9c3aa0d9" source="#495fe566-d51c-4af3-a3a2-2dbe387d7d32"/>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="fd3746f0-7837-45e9-be2c-09f9c8185438" name="Higher Priority Over other messages"
+                target="#05ccfdd9-abd9-4189-9a42-8a525cd5742d" source="#cd8ed3b2-4163-44a5-943e-5361cff5b052"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="21b5fcd6-d19a-4f83-be9b-c5093ad7007c" name="Provide On-Road Condition Information">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="a5a4e0fd-3037-4ee5-b18a-06f64e06094d" name=" Share On-Road Condition Information"/>
+                id="a5a4e0fd-3037-4ee5-b18a-06f64e06094d" name=" Share On-Road Condition Information">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="bcd011ef-386b-42d5-918a-8fdfd0680ceb" name="inRoad Conditions"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="7f6bd187-6189-4946-b2d6-73c8bdbdf384" name="FOP 1"/>
+            </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="d161f38d-2d8e-4630-9897-61e1f4e40987" name="Collect Relevant Road Condition Data"/>
+                id="d161f38d-2d8e-4630-9897-61e1f4e40987" name="Collect Relevant Road Condition Data">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="13e7cbba-4d24-4bc4-b73a-24391825f061" name="inRoad Conditions Query"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="2c0f6154-c7f3-493c-aca9-5cd44542309c" name="FOP 1"/>
+            </ownedFunctions>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="9c69cdcb-7b94-4933-ad40-dd1c8f9d8d96" targetElement="#3e57eac0-7fd8-47d4-8757-dca1cb4f714d"
               sourceElement="#2f3982b0-1b14-4b8d-8773-a61d1a83d628"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f068686b-b226-46d4-84af-467ab4afd047" name="Maneuver Notification"
+              target="#db3d5b51-da3c-40cf-a7cd-3ccc0afaab2a" source="#10c73a7f-0ff4-4613-9bad-54552751dc4e">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="e85c5cc8-6fd9-4dcb-a4ea-93ec9aa3e890" targetElement="#bc1e373e-573a-47d2-ade2-f9ee194f1c29"
+                sourceElement="#f068686b-b226-46d4-84af-467ab4afd047"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="89a822cb-2537-4924-8288-7be7ccab3ddf" name="Maneuver Notification with Outcomes"
+              target="#be447dfa-151a-4c2f-88f7-f61bfb9e6b3a" source="#9638c576-a897-41f1-8adf-fa8d21f14db6"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ecaf9e80-48a7-472a-b7a1-6eb34df201e2" name="Acceptance Message"
+              target="#c3e82a8e-8223-47b2-bf95-c0cbbf36bd92" source="#f0536948-6a05-4926-8fac-f9fdef665ccf"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="d9cabbf6-9547-444e-b2cd-adf3462228d6" name="Rejection Message" target="#5c0d12d8-f28c-490c-ad02-e2fb98456b14"
+              source="#5190c0c1-d4d0-4e5a-a2cc-f19fa41f309a"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="a2540397-1bf6-47b8-ac41-05aaf6be4e33" name="Acknowledgement for Maneuver Request"
+              target="#79fdf3eb-3e9a-44d2-b3e1-40d0e7e324a4" source="#a91f285c-b5ae-4349-864e-9d43400a53b0"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="bd00cdde-08ff-49ce-91f2-dd4631944023" name="Road Conditions Query"
+              target="#13e7cbba-4d24-4bc4-b73a-24391825f061" source="#d2e2a39f-81e4-43fa-8968-56141eca78d3">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="a4315096-6624-435e-85f7-63cb221bf8b4" targetElement="#1c14554f-398e-4641-af5c-8d3d44cddf0c"
+                sourceElement="#bd00cdde-08ff-49ce-91f2-dd4631944023"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="4639e08f-3062-497f-a9af-8881b2276eea" name="Road Conditions Query"
+              target="#ea4f292f-d623-42c6-812b-30e45b73d4fc" source="#2c0f6154-c7f3-493c-aca9-5cd44542309c"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="949db087-5364-4f54-9ddb-9be3890aba79" name="Road Conditions" target="#bcd011ef-386b-42d5-918a-8fdfd0680ceb"
+              source="#b6c41572-16cc-44b5-b969-6de1eeaedc9c">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="f04d013a-eb21-4b25-bcc8-436188b8a75b" targetElement="#9d7fc9fd-bf29-498b-8108-ed7f24775baf"
+                sourceElement="#949db087-5364-4f54-9ddb-9be3890aba79"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ce337375-32bb-4c69-bfb4-970e1b499fff" name="Collected Road Conditions"
+              target="#8a68141b-1a4d-48c4-be37-68d5de5747dc" source="#7f6bd187-6189-4946-b2d6-73c8bdbdf384"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ddc6ee50-6f36-41e9-9ba6-de63f83b436e" name="Emergency Broadcast"
+              target="#f680f123-3b26-4ba5-b00c-fe6df730bb56" source="#b3dd9152-340c-4c3f-956a-8145430b005e">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="e78a8bbc-ccbe-4807-9eba-ad422e2059f0" targetElement="#495ca1ba-f04a-4502-be90-427cd726fdd8"
+                sourceElement="#ddc6ee50-6f36-41e9-9ba6-de63f83b436e"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="be632d98-50ee-4280-b1f9-780625fa1037" name="High Priority Emergency Messages with Individual Directions"
+              target="#9534359b-729e-4816-a2eb-23f7310854e2" source="#97b1b291-00cd-446a-be1c-7756c1924cbc"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
@@ -1347,7 +1479,7 @@
             id="feb5f1ed-20e2-4669-9a63-cc68598e0535" targetElement="#afa4cf50-bc54-499a-94c9-ef26ab9b2c5f"
             sourceElement="#a145d98d-c9fd-4748-9bf2-282bb65559f2"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="659a30a4-0438-4e02-85c2-6e8fafa88ac8"
-            name="System" abstractType="#12307eec-1c0f-4348-8365-223461983383"/>
+            name="Driver to Driver Communication" abstractType="#12307eec-1c0f-4348-8365-223461983383"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ee22a54d-7d4d-4659-8a3e-e4b06f015f0b"
             name="Emergency Vehicles Driver" abstractType="#bd915485-c0e1-43cb-87af-5b21b1f57fb2"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a145d98d-c9fd-4748-9bf2-282bb65559f2"
@@ -1365,7 +1497,37 @@
             source="#7e1085b4-c085-47d9-add4-fbd8b1e26846" target="#a93e80ae-1558-4252-bb97-393a6bc7df92"
             kind="FLOW"/>
         <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-            id="12307eec-1c0f-4348-8365-223461983383" name="System">
+            id="12307eec-1c0f-4348-8365-223461983383" name="Driver to Driver Communication">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="8f0d7618-4367-4e34-9bdb-287bec4ee4fd" targetElement="#aefdf512-46c4-441c-8fab-a03e5e8a50f8"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="d0bff468-dabe-4929-a62e-ffed22da767e" targetElement="#2e62244a-de6c-4f9f-bd9f-4a915f70efb9"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="76eed582-37fc-401c-b3f6-3e79aa1ff449" targetElement="#50cf4b71-35f4-49be-8907-903aa0e0260c"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="c9e6b5db-7099-4a0c-918b-f4854f8d9198" targetElement="#0f1fa1df-193e-49be-9e18-4e280f7cf499"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="5fcd4b7e-86f6-4065-9806-31aba7366045" targetElement="#a3efe8ca-b446-4c53-9b79-eb807952e90b"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="125045a1-5f86-49f8-b5fa-f4cbcf41117f" targetElement="#75141db5-5d0d-4b24-b1e5-eb08ed9034fe"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="d349276d-8443-4049-bda7-582898f07187" targetElement="#824ca1bb-71f6-4c2e-9302-0a4a224e1342"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="ae8240c1-2399-486a-be4b-9ef49ac3ebde" targetElement="#29771fda-0c51-445e-ad16-d0d6c58c8235"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="0dec41d5-9692-4065-b27a-338976f13f5a" targetElement="#a5a4e0fd-3037-4ee5-b18a-06f64e06094d"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="4a1fac0c-74ec-4c6d-8bf3-e3fc3af56f9c" targetElement="#d161f38d-2d8e-4630-9897-61e1f4e40987"
+              sourceElement="#12307eec-1c0f-4348-8365-223461983383"/>
           <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
               id="a3856382-9579-4fe8-b642-854870d8a27d" name="System State Machine">
             <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
@@ -1493,15 +1655,6 @@
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="7a7e3659-8597-4f32-aecc-d7e7b29134dd" targetElement="#57432adc-ab7b-455b-974d-f41426b99793"
                 sourceElement="#df2fd377-82b2-4271-bce2-c2e895c75bf8"/>
-            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                id="de370552-2da9-41b5-b39c-4b664cb0c3dc" targetElement="#c8e41655-1133-401a-91b1-69d9fcf2fce4"
-                sourceElement="#df2fd377-82b2-4271-bce2-c2e895c75bf8"/>
-            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                id="6f6691c6-8b10-4f01-8f09-1a8c62bde34c" targetElement="#bf5c5265-6112-40a0-99ea-ce2394bbb052"
-                sourceElement="#df2fd377-82b2-4271-bce2-c2e895c75bf8"/>
-            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                id="dca1c8bb-754d-4a89-9109-49c7dc32e18b" targetElement="#da418909-8d2c-4e94-9f09-d789d44a337a"
-                sourceElement="#df2fd377-82b2-4271-bce2-c2e895c75bf8"/>
           </ownedFeatures>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="e466d211-15a0-4daa-b5d3-7cc34265cac2" targetElement="#39f20dc7-4398-4f38-a956-99de9d01f122"
@@ -1597,11 +1750,7 @@
                     sourceElement="#bb5c1f3a-f07c-48ff-b4fe-c336b9b71b1d"/>
               </inputs>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="0e4a3f17-1f4f-4853-b3ba-bf56b8fb2858" name="FOP 1">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="fae0919d-ab0f-4b01-bb78-8b0227558bcd" targetElement="#bf5c5265-6112-40a0-99ea-ce2394bbb052"
-                    sourceElement="#0e4a3f17-1f4f-4853-b3ba-bf56b8fb2858"/>
-              </outputs>
+                  id="0e4a3f17-1f4f-4853-b3ba-bf56b8fb2858" name="FOP 1"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="e5f0e89d-3837-4982-9f02-0ff13c400b9f" targetElement="#a3e0576d-a4e2-4b09-aa80-23a83a862c48"
                   sourceElement="#1c192254-43ff-4286-8932-b29af01b38ba"/>
@@ -1615,11 +1764,7 @@
                     sourceElement="#312f5007-1fda-4c39-a02f-424c17b2d508"/>
               </inputs>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="24355ebf-29c5-4df5-a730-601ffd75d541" name="FOP 1">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="3951061a-ecdf-419d-a5f0-b7f9607107eb" targetElement="#da418909-8d2c-4e94-9f09-d789d44a337a"
-                    sourceElement="#24355ebf-29c5-4df5-a730-601ffd75d541"/>
-              </outputs>
+                  id="24355ebf-29c5-4df5-a730-601ffd75d541" name="FOP 1"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="470ccd3a-386f-46e1-83d5-32d1031a19e5" targetElement="#3d2de10d-7e36-4b26-9b6a-3eda3666ef18"
                   sourceElement="#4abeaa2f-96c0-437b-aeab-7e5039703460"/>
@@ -1639,11 +1784,7 @@
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="dd548728-2c44-403a-a24e-e58e1c7b254a" name="Get Road Conditions">
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="3cf7f495-f304-482b-a849-0879b51194bb" name="outRoad Conditions Query">
-                <ownedPortRealizations xsi:type="org.polarsys.capella.core.data.information:PortRealization"
-                    id="eb8fae2a-b163-4574-a348-486c05981536" targetElement="#c8e41655-1133-401a-91b1-69d9fcf2fce4"
-                    sourceElement="#3cf7f495-f304-482b-a849-0879b51194bb"/>
-              </outputs>
+                  id="3cf7f495-f304-482b-a849-0879b51194bb" name="outRoad Conditions Query"/>
               <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
                   id="cc118678-3c8d-4e3f-9199-2f4d1c717490" targetElement="#f4cfb49f-173e-4750-b3bb-2c40aff15968"
                   sourceElement="#dd548728-2c44-403a-a24e-e58e1c7b254a"/>
@@ -2245,15 +2386,6 @@
           <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
               id="a496ff56-a33a-4398-8bc1-d91e533c7621" targetElement="#7a7e3659-8597-4f32-aecc-d7e7b29134dd"
               sourceElement="#df353e60-47e4-40d2-8c57-040180fc962e"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="2b692548-f072-4149-8f30-7ee76d8fee01" targetElement="#de370552-2da9-41b5-b39c-4b664cb0c3dc"
-              sourceElement="#070cadc3-6120-4257-8f76-8347ff071a79"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="43e019c6-9eb8-44f5-b804-abc4ed0c66c5" targetElement="#6f6691c6-8b10-4f01-8f09-1a8c62bde34c"
-              sourceElement="#49d61268-1466-42d7-b656-757676200005"/>
-          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
-              id="443f4069-700d-4e3c-b1bd-f416a72dd83b" targetElement="#dca1c8bb-754d-4a89-9109-49c7dc32e18b"
-              sourceElement="#7594e59d-e66d-4f13-9924-d9735a09bbae"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
               id="e3bdfe65-53e5-4710-af25-5f0171db6282" name="CP 2" orientation="INOUT"
               kind="FLOW">
